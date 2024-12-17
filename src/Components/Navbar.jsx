@@ -1,6 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
+import Wrapper from '../Wrappers/Navbar'
 
 
 const styledBtn = styled.button `
@@ -13,16 +14,16 @@ padding: 1rem;
 
 const Navbar = () => {
   return (
-   <nav>
+   <Wrapper>
     <div className="nav-center">
         <span className='logo'>Drinks App</span>
         <div className="nav-links">
-            <NavLink to='/' className='nav-links'>Home</NavLink>
-            <NavLink to='/about' className='nav-links'>About</NavLink>
-            <NavLink to='/newsletter' className='nav-links'>Newsletter</NavLink>
+            <NavLink to='/' className='nav-link'>Home</NavLink>
+            <NavLink to='/about' className='nav-link'>About</NavLink>
+            <NavLink to='/newsletter' className='nav-link'>Newsletter</NavLink>
         </div>
     </div>
-   </nav>
+   </Wrapper>
   )
 }
 
