@@ -1,6 +1,8 @@
 import axios from 'axios';
 import React from 'react'
 import { Link, useLoaderData } from 'react-router-dom'
+import CocktailList from '../Components/CocktailList';
+import SearchForm from '../Components/SearchForm';
 
 
 
@@ -19,10 +21,10 @@ const Landing = () => {
 
   
   return (
-    <div>
-      <h1>Landing</h1>
-      <Link to="/">Home Page</Link>
-    </div>
+    <>
+    <SearchForm />
+    <CocktailList drinks={drinks}/>
+    </>
   )
 }
 

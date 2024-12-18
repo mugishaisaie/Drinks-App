@@ -2,6 +2,7 @@ import React from 'react'
 import { createBrowserRouter,RouterProvider } from 'react-router-dom'
 import {About,Cocktail,Error,HomeLayout,Landing,Newsletter} from './pages'
 import { loader as landingLoader } from './pages/Landing';
+import SinglePageError from './pages/SinglePageError';
 
 
 
@@ -12,13 +13,14 @@ const router = createBrowserRouter([
     children:[
       {index: true,                              
         element: <Landing />,
+        errorElement: <SinglePageError />,
         loader:landingLoader,
       },
      
       {path: 'newsletter',                              
         element: <Newsletter />
       },
-      {path: 'cocktail',                              
+      {path: 'cocktail/:id',                              
         element: <Cocktail />
       },
       {path: 'about',                              
