@@ -800,8 +800,8 @@ const Cocktail = () => {
       <header>
         <Link to='/' className='btn'>
           back home
-        </Link>
         <h3>{name}</h3>
+        </Link>
       </header>
       <div className='drink'>
         <img src={image} alt={name} className='img'></img>
