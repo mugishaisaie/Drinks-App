@@ -5,6 +5,7 @@ import { loader as landingLoader } from './pages/Landing';
 import { loader as SingleCocktailLoader } from './pages/Cocktail';
 import SinglePageError from './pages/SinglePageError';
 import { action as newsletterAction} from './pages/Newsletter';
+import { QueryClient,QueryClientProvider } from '@tanstack/react-query';
 
 
 
